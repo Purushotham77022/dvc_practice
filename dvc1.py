@@ -7,6 +7,11 @@ df = pd.DataFrame({
     "Profession" : ["DataScientist","Operator","Incharge","Soilder"]
     })
 
+new_df = {"Name": "Naveen", "Age": 24,"Profession" : "Engineer"}
+df.loc[len(df.index)] = new_df
+
+new_df_1 = {"Name": "Srinu", "Age": 23,"Profession" : "CivilEngineer"}
+df.loc[len(df.index)] = new_df_1
 
 data_dir = 'data'
 os.makedirs(data_dir, exist_ok=True)
